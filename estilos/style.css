@@ -30,6 +30,7 @@ header
 nav
 {
     text-align: center;
+    font-size: 0.85em;
     padding-top: 10px;
 }
 
@@ -52,7 +53,6 @@ section
 {
     margin: 20px 0;
     line-height: 1.5em;
-    text-indent: 20px;
     text-align: justify;
     min-height: 300px;
 } 
@@ -69,6 +69,11 @@ h1
     font-family: var(--titleFont);
     font-weight: normal;
     padding: 15px 0;
+}
+
+main p
+{
+    text-indent: 20px;
 }
 
 .flex p
