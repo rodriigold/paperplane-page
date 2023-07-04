@@ -1,10 +1,11 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 :root
 {
     --titleFont: 'Permanent Marker', cursive;
-    --contentFont: Arial, Helvetica, sans-serif;
+    --contentFont: 'Itim', Arial, sans-serif;
 }
 
 *
@@ -30,7 +31,6 @@ header
 nav
 {
     text-align: center;
-    font-size: 0.85em;
     padding-top: 10px;
 }
 
@@ -39,7 +39,7 @@ nav a
     color: #000000;
     text-decoration: none;
     font-weight: bold;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 nav a:hover
@@ -63,12 +63,43 @@ img
     margin: 10px;
 }
 
+main a
+{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a:hover
+{
+    text-decoration: underline;
+}
+
+main a::after
+{
+    content: "🔗";
+}
+
+.whiteA
+{
+    color: #000000;
+}
+
+.blackA
+{
+    color: #ffffff;
+}
+
 h1
 {
     text-align: center;
     font-family: var(--titleFont);
     font-weight: normal;
     padding: 15px 0;
+}
+
+.white h1
+{
+    padding: 0 0 15px 0;
 }
 
 main p
@@ -85,11 +116,6 @@ main p
 {
     background-color: #ffffff;
     padding: 0 20px;
-}
-
-.white h1
-{
-    color: #000000;
 }
 
 .black
@@ -112,9 +138,9 @@ main p
     flex-wrap: wrap;
 }
 
-#inicio > p
+#inicio
 {
-    padding: 1.25em 0;
+    margin-bottom: 0;
 }
 
 #inicio img
@@ -122,6 +148,8 @@ main p
     width: 50%;
     display: block;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #criador
@@ -139,6 +167,7 @@ footer
 footer a
 {
     color: #000000;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -150,5 +179,4 @@ footer a:hover
 footer p
 {
     text-align: center;
-    font-weight: bold;
 }
